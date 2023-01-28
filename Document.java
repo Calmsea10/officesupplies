@@ -40,4 +40,31 @@ public class Document
         place+=spaces;
         return true;
     }
+
+    /**
+     * Sets the character at position of cursor to character newchar
+     * @param newchar the character to set
+     */
+    public void set(char newchar)
+    {
+        contents.set(place,newchar);
+    }
+
+    /**
+     * Appends a character to the end of the string
+     * @param newchar the character to append
+     */
+    public void append(char newchar)
+    {
+        contents.add(newchar);
+    }
+
+    /**
+     * Inserts a character at position of cursor
+     * @param newchar the character to insert
+     */
+    public void add(char newchar)
+    {
+        contents.add(place,newchar);
+    }
 }
