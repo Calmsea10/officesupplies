@@ -28,5 +28,8 @@ public class DocumentTester
         System.out.println("Testing add with string");
         doc.add("abc");
         System.out.println(doc);
+        System.out.println("Testing delete");
+        doc.delete();
+        System.out.println(doc);
     }
 }
