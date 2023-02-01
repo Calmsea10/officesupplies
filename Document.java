@@ -67,4 +67,29 @@ public class Document
     {
         contents.add(place,newchar);
     }
+
+    public void add(String newString)
+    {
+        for(int i=0;i<newString.length();i++)
+        {
+            contents.add(place,newString.charAt(i));
+            place++;
+        }
+    }
+
+    public void delete()
+    {
+        contents.remove(place);
+        place--;
+    }
+
+    public String toString()
+    {
+        String cont="";
+        for(int i=0;i<contents.size();i++)
+        {
+            cont=(cont+(contents.get(i)));
+        }
+        return "Contents:\n"+cont+"\nCursor Position:\n"+place;
+    }
 }
