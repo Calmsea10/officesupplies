@@ -90,6 +90,6 @@ public class Document
         {
             cont=(cont+(contents.get(i)));
         }
-        return "Contents:\n"+cont+"\nCursor Position:\n"+place;
+        return "Contents:\n"+cont+"\nCursor Position:\n"+(place+1);
     }
 }
